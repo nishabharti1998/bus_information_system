@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="adminstyle.css">
+        <script src="javascript/employee.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <p id="p1">WELCOME ADMIN</p>
+                <div class="bttn">
+                    <button type="submit" id="b1"  onclick="window.location.href='php/addstoppage.php'"><b>ADD STOPPAGE</b></button>
+                    <button type="submit" id="b2" name="submit" onclick="show_list()"><b>STOPPAGE LIST</b></button>
+       
+   
+                </div>
+        </div>
+    
+        <div class="sidebar">
+            <header>EMPLOYEE</header>
+                <div class="buttn">
+                    <button type="submit" id="b5"  onclick="window.location.href='addemployee.html'"><b>ADD </b></button><br><br>
+                    <button type="submit" id="b6"  onclick="show_employee()"><b>VIEW</b></button><br><br>
+        
+                </div>
+        </div>
+            <div id="errormessage"></div>
+            <div id="showlist"></div>
+            <div class="logout">
+                <a href="login.html">LOGOUT</a>
+            </div>
+    </body>
+</html>

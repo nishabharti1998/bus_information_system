@@ -1,0 +1,25 @@
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="stylelogin.css">
+    <script src="javascript/login.js"></script>
+</head>
+    <body>
+    
+        <div class="login">
+        <h1>Login</h1>
+        <form method="POST" name="loginform" id="loginform"  onsubmit="return false" >
+            <div id="errormessage" ></div>
+            <input type="text" name="u" placeholder="Username"  id="username" /><span id="user_name" onfocus="resetall()"></span>
+            <br><br>
+        
+            <input type="password" name="p" placeholder="Password"  id="password"  onfocus="resetall()"/><br><br>
+            <span id="passwrd"></span>
+        
+            <button type="submit" class="btn btn-primary btn-block btn-large" onclick="validate()">SIGN IN</button>
+            <pre>Already a member?   <a href="registration.html">SIGNUP</a></pre>
+        
+        </form>
+        </div>
+    </body>
+
+</html>

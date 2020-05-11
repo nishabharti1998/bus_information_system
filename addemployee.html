@@ -1,0 +1,53 @@
+  <html>
+      <head>
+          <link rel="stylesheet" type="text/css" href="style.css">
+          <script src="javascript/employee.js"></script>
+      </head>
+          <body>
+              <form  method="POST" id="myform" name="myform" onsubmit="return false" >
+                  <div class="input-group">
+                      <span id="errormessage" ></span>
+                  </div>
+                  <div class="input-group">
+                      <label>Name</label>
+                      <input type="text" name="name"  autocomplete="off" id="name" onfocus="resetall()" >
+                      <span id="name" ></span>
+                  </div>
+                  <div class="input-group">
+                      <label>Contact No</label>
+                      <input type="text" name="contact"  autocomplete="off" id="contact" onfocus="resetall()" >
+                      <span id="user_contact" ></span>
+                  </div>
+                  <div class="input-group">
+                      <label>Email</label>
+                      <input type="text" name="email"  autocomplete="off" id="email" onfocus="resetall()">
+                      <span id="user_email" ></span>
+                  </div>
+                  <div class="input-group">
+                      <label>GENDER</label>
+                      <select name="gender" id="gender">
+                      <option>SELECT</option>
+                      <option>MALE</option>
+                      <option>FEMALE</option>
+                      <option>OTHERS</option>
+                      <span id="gender" ></span>
+                      </select>
+                      <div class="input-group">
+                        <label>Username:</label>
+                        <input type="text" name="username"  autocomplete="off" id="username" onfocus="resetall()">
+                        <span id="user_name" ></span>
+                    </div>
+                    <div class="input-group">
+                      <label>Password:</label>
+                      <input type="password" name="password"  autocomplete="off" id="password" onfocus="resetall()">
+                      <span id="user_password" ></span>
+                  </div>
+
+
+                    <br><br>
+                    <button type="button"  class="btn" name="submit" id="submit" onclick="validate_employee()">ADD</button><br><br>
+                    <a href="admin.html">BACK</a>
+                  </div>
+                </form>
+            </body>
+      </html>
